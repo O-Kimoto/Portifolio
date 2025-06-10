@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio</title>
+  <title>Projetos e Certificações</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -28,9 +28,17 @@
     main {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
     }
-    section {
+    .projects-section {
+      flex: 1;
+      min-width: 300px;
+      margin: 10px;
+      background-color: #2a9d8f;
+      color: white;
+      padding: 20px;
+    }
+    .certifications-section {
       flex: 1;
       min-width: 300px;
       margin: 10px;
@@ -43,32 +51,37 @@
       color: white;
       text-align: center;
     }
+    a {
+      color: #f4a261;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Meu Portfólio</h1>
+    <h1>Projetos e Certificações</h1>
   </header>
   <nav>
     <a href="index.html">Início</a>
     <a href="sobre.html">Projetos e Certificações</a>
   </nav>
   <main>
-    <section>
-      <h2>Sobre Mim</h2>
-      <p>Sou o Otávio, estudante do curso de Ciência da Computação na Faculdade CESAR School e trabalho na MAYK Soluções.</p>
-      <p>Estou aprendendo Python, que me ajuda a desenvolver scripts e automações que utilizo na empresa. Além disso, possuo conhecimento em relatórios Excel e HelpDesk.</p>
+    <section class="projects-section">
+      <h2>Projetos</h2>
+      <p><strong>Mentes em Jogo:</strong> Um jogo criado para fins educacionais e a socialização de crianças que portam Transtorno do Especro Autista. Desenvolvemos um tabuleiro lúdico para prender a atenção dos jogadores, utilizando Arduino, LEDs, acrílico e outros materiais.</p>
+      <p><a href="https://github.com/guilhermeblacerda/Mentes_em_Jogo" target="_blank">Veja o projeto aqui</a></p>
+      <p><strong>Premiação:</strong> Desenvolvi um script de automação para facilitar o processo de premiação da minha empresa. Ele coleta as vendas de cada consultor, verifica se são ativas, desconectadas ou canceladas, e faz cálculos considerando faltas, ausências ou atrasos. A saída é uma planilha de Excel.</p>
+      <p><a href="https://github.com/O-Kimoto/PremiacaoSOHO" target="_blank">Confira o código aqui</a></p>
     </section>
-    <section>
-      <h3>Competências:</h3>
-      <ul>
-        <li>Excel avançado</li>
-        <li>Resolução de problemas</li>
-        <li>Automação de planilhas</li>
-        <li>Inglês intermediário</li>
-        <li>Trabalho em grupo</li>
-        <li>Hardware</li>
-      </ul>
+    <section class="certifications-section">
+      <h2>Certificações</h2>
+      <p><strong>Certificação em Java:</strong> Certificação registrada no Credly, demonstrando minhas habilidades em desenvolvimento com Java.</p>
+      <p><a href="https://www.credly.com/badges/cef3215e-ef9a-41ef-bae2-19eb2ca372ee" target="_blank">Veja o badge aqui</a></p>
+      <p><strong>Certificação em Python:</strong> Certificação registrada no Credly, destacando meu conhecimento em programação com Python.</p>
+      <p><a href="https://www.credly.com/badges/cef3215e-ef9a-41ef-bae2-19eb2ca372ee" target="_blank">Veja o badge aqui</a></p>
     </section>
   </main>
   <footer>
